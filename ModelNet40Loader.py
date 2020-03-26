@@ -52,6 +52,7 @@ class FewShotModelNet40Cls(data.Dataset):
             select = [27,28,29,30,31,33,34,36,38,39]
         if self.state=="test":
             select = [1,2,10,14,16,24,25,32,35,37]
+       # merge_ply_data.h5 can download from http://modelnet.cs.princeton.edu/
         with h5py.File('./data/merge_ply_data.h5') as f:
             for i in select:
                 self.data.append(f[str(i)][:])
