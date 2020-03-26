@@ -4,7 +4,7 @@ Codes for FewShotLearning
 # dataloader.py
 A dataloader for few-shot learning datasets
 eg：load the data of Few-shot CIFAR-100(FC100)  
-```
+``` python
 import dataloader
 image_datasets = {}
 setroot='/tmp/fs_dinoor/' #set the root directory of the dataset
